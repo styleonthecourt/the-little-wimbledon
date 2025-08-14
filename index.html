@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Little Wimbledon™ - 사업 계획서</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #F8F9FA;
+        }
+        .section-title {
+            font-weight: 900;
+            font-size: 2.5rem;
+            color: #1a202c;
+            margin-bottom: 1.5rem;
+        }
+        .section-subtitle {
+            font-weight: 500;
+            font-size: 1.25rem;
+            color: #4a5568;
+            margin-bottom: 3rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .card {
+            background-color: white;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .nav-link {
+            transition: color 0.3s;
+        }
+        .nav-link:hover {
+            color: #047857; /* Wimbledon Green */
+        }
+        .stat-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .gift-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background-color: #047857;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="font-black text-2xl text-gray-800">The Little Wimbledon™</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#overview" class="nav-link text-gray-600 font-semibold">사업 개요</a>
+                <a href="#market" class="nav-link text-gray-600 font-semibold">시장 기회</a>
+                <a href="#products" class="nav-link text-gray-600 font-semibold">제품 라인업</a>
+                <a href="#strategy" class="nav-link text-gray-600 font-semibold">실행 전략</a>
+                <a href="#financials" class="nav-link text-gray-600 font-semibold">재무 분석</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-[60vh] md:h-[80vh] flex items-center justify-center text-white text-center bg-gray-800">
+        <div class="absolute inset-0 bg-cover bg-center z-0" style="background-image: url('https://lh3.googleusercontent.com/d/1oNLy-N6dt9WvRbuV9tZWY2PP9WXSj2xa');">
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+        </div>
+        <div class="relative z-10 p-6">
+            <h1 class="text-4xl md:text-7xl font-black leading-tight mb-4">The Little Wimbledon™</h1>
+            <p class="text-xl md:text-3xl font-light">우리 아이의 첫 번째 그랜드슬램, 특별한 순간을 선물합니다.</p>
+        </div>
+    </header>
+
+    <main>
+        <!-- Overview Section -->
+        <section id="overview" class="py-20 px-6 text-center">
+            <h2 class="section-title">사업 개요</h2>
+            <p class="section-subtitle">우리는 단순한 유아복 브랜드를 넘어, 차세대 테니스 가족을 위한 최고의 라이프스타일과 문화를 큐레이팅합니다.</p>
+            <div class="container mx-auto grid md:grid-cols-3 gap-8 text-left">
+                <div class="card p-8">
+                    <h3 class="font-bold text-2xl mb-4 text-emerald-700">Brand Mission</h3>
+                    <p>세계 4대 그랜드슬램의 고유한 스토리를 담은 제품을 통해, 부모와 아이가 함께하는 소중한 순간을 더욱 특별하게 만드는 것을 사명으로 합니다.</p>
+                </div>
+                <div class="card p-8">
+                    <h3 class="font-bold text-2xl mb-4 text-emerald-700">Target Audience</h3>
+                    <p>자녀를 위해 최고의 소재와 안전성을 타협하지 않으며, 자신의 라이프스타일과 가치관을 소비를 통해 표현하는 30-40대 '가치 지향적 큐레이터' 부모 및 선물 구매자.</p>
+                </div>
+                <div class="card p-8">
+                    <h3 class="font-bold text-2xl mb-4 text-emerald-700">Unique Selling Proposition</h3>
+                    <p>세계 4대 그랜드슬램의 공식적인 미학과 스토리를 컬렉션 단위로 풀어내는 최초의 프리미엄 유아 기프트 브랜드. 모방할 수 없는 강력한 브랜드 서사를 제공합니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Market Opportunity Section -->
+        <section id="market" class="py-20 px-6 bg-white text-center">
+            <h2 class="section-title">시장 기회 및 목표</h2>
+            <p class="section-subtitle">견고하게 성장하는 프리미엄 유아동복 시장 내, '가치/선물형 소비'라는 명확한 틈새시장을 공략하여 압도적인 성과를 창출합니다.</p>
+            <div class="container mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="card p-6 text-center">
+                    <h4 class="font-bold text-lg text-gray-500">전체 시장 (TAM)</h4>
+                    <p class="font-black text-4xl text-emerald-600 my-2">8,000억</p>
+                    <p class="text-sm text-gray-500">국내 프리미엄 영유아 의류</p>
+                </div>
+                <div class="card p-6 text-center">
+                    <h4 class="font-bold text-lg text-gray-500">유효 시장 (SAM)</h4>
+                    <p class="font-black text-4xl text-emerald-600 my-2">2,400억</p>
+                    <p class="text-sm text-gray-500">'가치/선물형' 소비 그룹</p>
+                </div>
+                <div class="card p-6 text-center">
+                    <h4 class="font-bold text-lg text-gray-500">1년차 목표 매출</h4>
+                    <p class="font-black text-4xl text-emerald-600 my-2">3.24억</p>
+                    <p class="text-sm text-gray-500">유효 시장의 0.14% 점유</p>
+                </div>
+                <div class="card p-6 text-center">
+                    <h4 class="font-bold text-lg text-gray-500">1년차 목표 판매량</h4>
+                    <p class="font-black text-4xl text-emerald-600 my-2">3,000<span class="text-2xl">세트</span></p>
+                    <p class="text-sm text-gray-500">All-Quad-Core 전략 기반</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="py-20 px-6 text-center">
+            <h2 class="section-title">The Grand Slam First-Step Gift Set</h2>
+            <p class="section-subtitle">세계 4대 테니스 토너먼트의 고유한 개성과 스토리를 담아낸 4가지 프리미엄 기프트 세트입니다. 각 세트는 폴로 바디수트, 양말, 손수건, 그리고 테마에 맞는 치발기로 구성되어 있습니다.</p>
+            <div class="container mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Wimbledon -->
+                <div class="card overflow-hidden relative">
+                    <img src="https://lh3.googleusercontent.com/d/1oNLy-N6dt9WvRbuV9tZWY2PP9WXSj2xa" alt="윔블던 기프트 세트" class="w-full h-80 object-cover">
+                    <div class="gift-badge">GIFT SET</div>
+                    <div class="p-6 text-left">
+                        <h3 class="font-black text-xl mb-2">윔블던 (The Classic)</h3>
+                        <p class="text-gray-600">헤리티지와 전통. 클래식 화이트 바디수트, 양말, 손수건, 그리고 나무 치발기로 구성되어 시간이 지나도 변치 않는 가치를 선물합니다.</p>
+                    </div>
+                </div>
+                <!-- Roland-Garros -->
+                <div class="card overflow-hidden relative">
+                    <img src="https://lh3.googleusercontent.com/d/1VgPmkNYjMWCpAMuNoDbmEyR_Rb3IyvoQ" alt="롤랑가로스 기프트 세트" class="w-full h-80 object-cover">
+                    <div class="gift-badge" style="background-color: #D68C7C;">GIFT SET</div>
+                    <div class="p-6 text-left">
+                        <h3 class="font-black text-xl mb-2">롤랑가로스 (The Passion)</h3>
+                        <p class="text-gray-600">우아함과 열정. 클레이 코트를 연상시키는 테라코타 컬러 세트와 테니스공 모양의 치발기로 유럽의 시크한 감성을 담았습니다.</p>
+                    </div>
+                </div>
+                <!-- US Open -->
+                <div class="card overflow-hidden relative">
+                    <img src="https://lh3.googleusercontent.com/d/1XN9D_doQbS-p2XQnea6cxB3kz_8FRjJj" alt="US 오픈 기프트 세트" class="w-full h-80 object-cover">
+                    <div class="gift-badge" style="background-color: #2C3E50;">GIFT SET</div>
+                    <div class="p-6 text-left">
+                        <h3 class="font-black text-xl mb-2">US 오픈 (The Dynamic)</h3>
+                        <p class="text-gray-600">에너지와 현대성. 딥 네이비 컬러 세트와 테니스공 모양의 치발기로 도시의 활기찬 에너지를 표현합니다.</p>
+                    </div>
+                </div>
+                <!-- Australian Open -->
+                <div class="card overflow-hidden relative">
+                    <img src="https://lh3.googleusercontent.com/d/1oDDeP_rnfhDIVhLUkIrR_Xgb7GCTZRGz" alt="호주 오픈 기프트 세트" class="w-full h-80 object-cover">
+                    <div class="gift-badge" style="background-color: #FBBF24;">GIFT SET</div>
+                    <div class="p-6 text-left">
+                        <h3 class="font-black text-xl mb-2">호주 오픈 (The Sunshine)</h3>
+                        <p class="text-gray-600">즐거움과 활기. 밝은 하늘색 세트와 해님 모양의 치발기로 '해피 슬램'의 사랑스러움을 극대화했습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Strategy Section -->
+        <section id="strategy" class="py-20 px-6 bg-white text-center">
+            <h2 class="section-title">실행 전략: All-Quad-Core</h2>
+            <p class="section-subtitle">4가지 핵심 동력 채널을 유기적으로 연결하여 1년차부터 시장을 선점하는 전방위적 전략을 실행합니다.</p>
+            <div class="container mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="card p-6 text-center border-t-4 border-emerald-600">
+                    <h4 class="font-black text-xl mb-2">D2C 자사몰</h4>
+                    <p class="text-gray-600">브랜드의 심장. 충성 고객 확보 및 높은 마진을 통한 수익성 견인.</p>
+                </div>
+                <div class="card p-6 text-center border-t-4 border-blue-600">
+                    <h4 class="font-black text-xl mb-2">쿠팡 로켓그로스</h4>
+                    <p class="text-gray-600">브랜드의 확성기. 안정적 매출 기반 및 대규모 신규 고객 유입.</p>
+                </div>
+                <div class="card p-6 text-center border-t-4 border-purple-600">
+                    <h4 class="font-black text-xl mb-2">인플루언서 공동구매</h4>
+                    <p class="text-gray-600">브랜드의 부스터. 폭발적 매출 및 바이럴을 통한 인지도 급상승.</p>
+                </div>
+                <div class="card p-6 text-center border-t-4 border-orange-500">
+                    <h4 class="font-black text-xl mb-2">기업 복지몰</h4>
+                    <p class="text-gray-600">브랜드의 안전판. 안정적 B2B 매출 및 브랜드 신뢰도 제고.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Financials Section -->
+        <section id="financials" class="py-20 px-6 text-center">
+            <h2 class="section-title">1년차 재무 분석</h2>
+            <p class="section-subtitle">공격적인 다채널 전략을 통해 1년차에 초기 투자를 회수하고도 안정적인 수익을 창출하는 강력한 재무 구조를 구축합니다.</p>
+            <div class="container mx-auto grid md:grid-cols-2 gap-8 items-center">
+                <div class="card p-8">
+                    <canvas id="salesChart"></canvas>
+                </div>
+                <div class="text-left space-y-6">
+                    <div class="card p-6">
+                        <h4 class="font-semibold text-lg text-gray-500">1년차 총 예상 매출</h4>
+                        <p class="font-black text-5xl text-emerald-600">3.24<span class="text-3xl">억원</span></p>
+                    </div>
+                    <div class="card p-6">
+                        <h4 class="font-semibold text-lg text-gray-500">1년차 총 예상 순이익</h4>
+                        <p class="font-black text-5xl text-emerald-600">1.08<span class="text-3xl">억원</span></p>
+                    </div>
+                     <div class="card p-6 bg-emerald-600 text-white">
+                        <h4 class="font-semibold text-lg opacity-80">핵심 성과</h4>
+                        <p class="font-bold text-2xl">초기 투자 비용(5,200만원) 전액 회수 및<br>추가 이익 5,600만원 확보</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-8">
+        <p class="font-black text-2xl mb-2">The Little Wimbledon™</p>
+        <p>&copy; 2025 The Little Wimbledon. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Chart.js for Financials
+        const ctx = document.getElementById('salesChart').getContext('2d');
+        const salesChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['D2C', '쿠팡', '공동구매', '복지몰'],
+                datasets: [{
+                    label: '채널별 매출 기여도',
+                    data: [9288, 6480, 11232, 5400], // 단위: 만원
+                    backgroundColor: [
+                        '#059669',
+                        '#2563EB',
+                        '#7C3AED',
+                        '#F97316'
+                    ],
+                    borderColor: '#F8F9FA',
+                    borderWidth: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: '1년차 채널별 예상 매출 기여도 (단위: 만원)',
+                        font: {
+                            size: 16,
+                            weight: 'bold'
+                        }
+                    }
+                }
+            }
+        });
+
+        // Smooth scrolling for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
